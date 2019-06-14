@@ -18,7 +18,6 @@ public class MovePlayer : MonoBehaviour
     //Utilities
     float horizontalInput, verticalInput;
     Vector3 movementDirection, velocity;
-    bool playerMoving;
     #endregion
 
     #region Core
@@ -47,11 +46,6 @@ public class MovePlayer : MonoBehaviour
 
         //Is the player moving?
         velocity = new Vector3(horizontalInput, 0, verticalInput);
-
-        if (velocity != Vector3.zero)
-            playerMoving = true;
-        else
-            playerMoving = false;
 
         //Modify move vector
         if (verticalInput > 0)
