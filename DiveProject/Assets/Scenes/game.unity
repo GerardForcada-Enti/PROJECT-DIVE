@@ -307,7 +307,7 @@ GameObject:
   - component: {fileID: 69872941}
   - component: {fileID: 69872940}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Cube END
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -495,7 +495,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 0.11764705, g: 1, b: 0.77985966, a: 1}
+  m_Color: {r: 0.84011215, g: 0.8773585, b: 0.8680883, a: 1}
   m_Intensity: 1
   m_Range: 100
   m_SpotAngle: 30
@@ -719,13 +719,14 @@ GameObject:
   - component: {fileID: 1739300709}
   - component: {fileID: 1739300713}
   - component: {fileID: 1739300707}
+  - component: {fileID: 1739300708}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1739300707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -740,6 +741,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 500
   fallMultiplier: 0.005
+--- !u!114 &1739300708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739300706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0386e39df26f4404fa06c4bc111da839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winScene: win
+  loseScene: 
+  mCloud: {fileID: 5138512165549478771, guid: 3476a8e403321674fb68439cb1d352f4, type: 3}
+  mEnd: {fileID: 69872939}
 --- !u!135 &1739300709
 SphereCollider:
   m_ObjectHideFlags: 0
