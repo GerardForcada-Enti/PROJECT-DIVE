@@ -9,10 +9,11 @@ public class ColisionManager : MonoBehaviour
     public string loseScene;
     public GameObject mCloud;
     public GameObject mEnd;
+    public GameObject[] wallCol = new GameObject[4];
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject == mEnd)
+        if (collision.gameObject == mEnd)
         {
             SceneManager.LoadScene(winScene);
         }
@@ -20,6 +21,14 @@ public class ColisionManager : MonoBehaviour
         {
             SceneManager.LoadScene(loseScene);
         }
+        for (int i = 0; i < 4; i++)
+        {
+            if (collision.gameObject == wallCol[i])
+            {
+                SceneManager.LoadScene(loseScene);
+            }
+        }
     }
+
 
 }
