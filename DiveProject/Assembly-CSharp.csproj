@@ -63,6 +63,7 @@
     <Compile Include="Assets\scripts\Botones.cs" />
     <Compile Include="Assets\scripts\ColisionManager.cs" />
     <Compile Include="Assets\scripts\MovePlayer.cs" />
+    <Compile Include="Assets\scripts\pauseMenu.cs" />
     <Compile Include="Assets\scripts\spawn.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Repos git/recu project2/PROJECT-DIVE/DiveProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

@@ -21,7 +21,7 @@ public class ColisionManager : MonoBehaviour
         {
             SceneManager.LoadScene(loseScene);
         }
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < wallCol.Length; i++)
         {
             if (collision.gameObject == wallCol[i])
             {
